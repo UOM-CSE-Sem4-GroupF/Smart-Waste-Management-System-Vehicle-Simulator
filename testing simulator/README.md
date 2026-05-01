@@ -1,0 +1,58 @@
+# Smart Waste Management System - Vehicle Simulator
+
+This project simulates waste collection vehicles, reporting their real-time coordinates, speed, and heading to an MQTT broker.
+
+## Features
+- Real-time GPS simulation (Colombo, Sri Lanka area)
+- MQTT integration with QoS 1 for reliable delivery
+- Configurable simulation speed
+- Environment variable support
+
+## Getting Started
+
+### Prerequisites
+- Python 3.11+ (if running locally)
+- Docker and Docker Compose (recommended)
+- MQTT Broker (e.g., EMQX, Mosquitto)
+
+### Configuration
+Create a `.env` file in the root directory (refer to `.env.example` if available, or use the following):
+
+```env
+MQTT_BROKER=your-broker-ip
+MQTT_PORT=1883
+MQTT_USER=your-user
+MQTT_PASSWORD=your-password
+MQTT_TOPIC_PREFIX=vehicles
+SIM_SPEED_FACTOR=1
+```
+
+### Running with Docker (Recommended)
+
+1. **Build and Start the Simulator:**
+   ```bash
+   docker-compose up -d --build
+   ```
+
+2. **View Logs:**
+   ```bash
+   docker logs -f vehicle-simulator
+   ```
+
+3. **Stop the Simulator:**
+   ```bash
+   docker-compose down
+   ```
+
+### Running Locally
+
+1. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Run the Simulator:**
+   ```bash
+   python simulator.py
+   ```
+
