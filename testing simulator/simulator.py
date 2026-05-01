@@ -14,12 +14,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger("vehicle-simulator")
 
 # Configuration
-MQTT_BROKER = os.getenv("MQTT_BROKER", "localhost")
-MQTT_PORT = int(os.getenv("MQTT_PORT", 1883))
-MQTT_USER = os.getenv("MQTT_USER", "edge-gateway")
-MQTT_PASSWORD = os.getenv("MQTT_PASSWORD", "swms-edge-dev-2026")
-TOPIC_PREFIX = os.getenv("MQTT_TOPIC_PREFIX", "vehicles")
-SIM_SPEED_FACTOR = int(os.getenv("SIM_SPEED_FACTOR", 1))
+MQTT_BROKER = os.getenv("MQTT_BROKER")
+MQTT_PORT = int(os.getenv("MQTT_PORT"))
+MQTT_USER = os.getenv("MQTT_USER")
+MQTT_PASSWORD = os.getenv("MQTT_PASSWORD")
+TOPIC_PREFIX = os.getenv("MQTT_TOPIC_PREFIX")
+SIM_SPEED_FACTOR = int(os.getenv("SIM_SPEED_FACTOR"))
 
 # Simulated Vehicles (Starting rough coordinates around Colombo, Sri Lanka)
 VEHICLES = {
