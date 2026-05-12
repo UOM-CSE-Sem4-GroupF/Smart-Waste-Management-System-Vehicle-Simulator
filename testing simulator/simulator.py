@@ -25,7 +25,7 @@ SIM_SPEED_FACTOR = int(os.getenv("SIM_SPEED_FACTOR"))
 VEHICLES = {
     "LORRY-01": {"lat": 6.9271, "lon": 79.8612},
     "LORRY-02": {"lat": 6.9350, "lon": 79.8480},
-    "TRUCK-01": {"lat": 6.9100, "lon": 79.8700}
+    "LORRY-03": {"lat": 6.9100, "lon": 79.8700}
 }
 
 def on_connect(client, userdata, flags, rc):
