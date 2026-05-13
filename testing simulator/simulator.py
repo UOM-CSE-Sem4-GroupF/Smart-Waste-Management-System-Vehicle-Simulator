@@ -24,8 +24,8 @@ SIM_SPEED_FACTOR = int(os.getenv("SIM_SPEED_FACTOR"))
 # Simulated Vehicles (Starting rough coordinates around Colombo, Sri Lanka)
 VEHICLES = {
     "LORRY-01": {"lat": 6.777656, "lon": 79.883930},
-    "LORRY-02": {"lat": 6.777656, "lon": 79.883940},
-    "LORRY-03": {"lat": 6.777656, "lon": 79.883950}
+    "LORRY-02": {"lat": 6.779500, "lon": 79.885500},
+    "LORRY-03": {"lat": 6.775500, "lon": 79.882000}
 }
 
 
